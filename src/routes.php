@@ -1,7 +1,7 @@
 <?php
 
 if (App::environment('local')) {
-    Route::get('/tallandsassy/tasbranding/groks_branding', function () {
-        return view('tassy::groks_branding/index');
+    Route::get('/tallandsassy/tasbranding/groks_tasbranding', function () {
+        return view('tassy::groks_tasbranding/index');
     });
 }

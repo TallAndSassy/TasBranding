@@ -1,0 +1,7 @@
+# This will, basically, setup config/tasbranding.php. You should modify, as desired.
+php artisan vendor:publish --tag=tasbranding.config
+
+# copy the default logo over. You can override when wanted.
+# find logos in public/tassy/branding/logos
+php artisan vendor:publish --Provider="TallAndSassy\TasBranding\TasBrandingServiceProvider"
+
