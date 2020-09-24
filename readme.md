@@ -16,6 +16,7 @@ $ composer require tallandsassy/tasbranding
 ```
 
 ## Usage
+For usage, visit (on your local installation): http://localhost/tallandsassy/tasbranding/groks_branding
 
 ## Change log
 
