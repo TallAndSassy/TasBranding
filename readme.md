@@ -10,9 +10,17 @@ This is where your description should go. Take a look at [contributing.md](contr
 ## Installation
 
 Via Composer
-
 ``` bash
-$ composer require tallandsassy/tasbranding
+composer require tallandsassy/tasbranding
+
+# This will, basically, setup config/tasbranding.php. You should definitley modify, as desired.
+php artisan vendor:publish --tag=tasbranding.config
+
+# copy the default logo over. You can override when wanted.
+# find logos in public/tassy/branding/logos
+php artisan vendor:publish --Provider="TallAndSassy\TasBranding\TasBrandingServiceProvider"
+
+
 ```
 
 ## Usage
