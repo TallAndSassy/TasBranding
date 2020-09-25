@@ -16,11 +16,17 @@ class TasBrandingServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'tallandsassy');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'tassy');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        /* Configure the routes offered by the application.
+            Still learning - this should work, but gives Trying to get property 'profile_photo_url' of non-object (View:
+            And for livewire, getting an alert 'this page timed out'
+            #$this->loadRoutesFrom(__DIR__.'/routes.php');
+        */
          $this->loadRoutesFrom(__DIR__.'/routes.php');
 
          $this->publishes([
             __DIR__.'/public/branding' => public_path('tassy/branding'),
-        ], ['TallAndSassy','TassyBranding']);
+        ], ['TallAndSassy','TassyBranding', 'EtGrok']);
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
