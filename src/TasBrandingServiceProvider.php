@@ -20,7 +20,7 @@ class TasBrandingServiceProvider extends ServiceProvider
 
          $this->publishes([
             __DIR__.'/public/branding' => public_path('tassy/branding'),
-        ], 'public');
+        ], ['TallAndSassy','TassyBranding']);
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
