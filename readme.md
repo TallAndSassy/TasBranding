@@ -9,7 +9,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 
 ## Installation
 
-Via Composer
+
 ``` bash
 composer require tallandsassy/tasbranding
 
@@ -18,13 +18,11 @@ php artisan vendor:publish --tag=tasbranding.config
 
 # copy the default logo over. You can override when wanted.
 # find logos in public/tassy/branding/logos
-php artisan vendor:publish --Provider="TallAndSassy\TasBranding\TasBrandingServiceProvider"
-
-
+php artisan vendor:publish --provider="TallAndSassy\TasBranding\TasBrandingServiceProvider"
 ```
 
 ## Usage
-For usage, visit (on your local installation): http://localhost/tallandsassy/tasbranding/groks_branding
+For usage, visit (on your local installation): http://localhost/grok/tassy/groks_tasbranding
 
 ## Change log
 
